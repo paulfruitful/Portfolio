@@ -12,8 +12,13 @@
   text-decoration: none;
 }
 body{
-  width: auto;
-  height: auto;
+  width:100%;
+  height:100%;
+}
+html{
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
 }
 
 nav{
@@ -24,16 +29,16 @@ nav{
     margin-left:40px;
     margin-top:15px;
     margin-bottom:40px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium';
+    
+   
     font-size:21px;
     overflow: hidden;
 }
 
 nav h1{
     font-size: 39px;
-    font-family: 'Dancing Script', cursive;
-    font-weight: bold;
+   font-family:cursive;
+    
     color: rgb(85, 13, 116);
 }
 .navbar .icon {
@@ -67,7 +72,7 @@ nav li:hover{
     background-color:rgb(85, 13, 116);
     color:white;
     margin-bottom: 30px;
-    overflow: h;
+    
 }
 #second div{
     position:absolute;
@@ -86,7 +91,7 @@ nav li:hover{
     font-size:33px;
     margin-left:-15px;
     margin-bottom: -2px;
-font-family: 'Pacifico', cursive;
+
     
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -111,7 +116,7 @@ font-family: 'Pacifico', cursive;
     margin-left:15px;
     font-size:15px;
     font-weight:normal;
-    font-family:'Lobster',cursive;
+    
     letter-spacing:1.9px;
     margin-bottom:8px;
     
@@ -558,7 +563,8 @@ font-family: 'Pacifico', cursive;
 .skill img{
   width:40% ;
   height: 138px;
-  padding-left: 40px;
+  padding-left: 10px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .skill:hover {
@@ -594,13 +600,16 @@ font-family: 'Pacifico', cursive;
   }
 }
 
-
+#u img{
+  height:115px;
+}
 @media only screen and (max-width:375px){
   body{
    
   }
   .skill{
     width:310px;
+    margin-left: 13;
   }
 }
 @media only screen and (min-width:768px) {
@@ -704,7 +713,7 @@ text-align: center;
 footer{
   display: flex;
   flex-direction:row;
-  width:150%;
+  width:100%;
   background-color: rgb(85, 13, 116);
   color: white;
   height:300px;
@@ -712,9 +721,8 @@ footer{
 }
 footer div{
   align-self: center;
-  margin-right: 190px;
   margin-left: 30px;
-  margin-top: -100px;
+  margin-top: -50px;
   width: 30%;
 }
 
@@ -723,6 +731,10 @@ footer div p a{
   color: white;
 }
 
+footer div li a{
+  text-decoration: none;
+  color: white;
+}
 
 .contact{
   width: 47%;
@@ -769,4 +781,8 @@ footer div p a{
   #second div{
     margin-top: -50px;
   }
+}
+
+html{
+  
 }
