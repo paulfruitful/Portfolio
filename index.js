@@ -10,7 +10,7 @@ function myFunction() {
     let show=document.getElementById('show');
     let see=document.getElementById('see')
     let k=document.getElementById('knowledge')
-    let i=document.getElementById('skill')
+    let i=document.getElementById('head')
     show.style.display="block";
     if(show.style.display=='block'){
       see.style.display="none";
