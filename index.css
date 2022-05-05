@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Pacifico&family=Roboto:wght@300&display=swap');
 *{
     padding:0;
     margin: 0;
@@ -32,9 +33,9 @@ nav{
 }
 
 nav h1{
-    font-size: 39px;
-   font-family:cursive;
-    
+    font-size: 51px;
+   font-family:'Roboto', sans-serif;
+    text-align:center;    
     color: rgb(85, 13, 116);
 }
 .navbar .icon {
