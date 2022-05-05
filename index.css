@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Pacifico&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap');
 *{
     padding:0;
     margin: 0;
@@ -33,8 +33,8 @@ nav{
 }
 
 nav h1{
-    font-size: 51px;
-   font-family:'Roboto', sans-serif;
+    font-size: 50px;
+   font-family:'Radio Canada',;
     text-align:center;    
     color: rgb(85, 13, 116);
 }
