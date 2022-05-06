@@ -367,6 +367,9 @@ nav li:hover{
  nav h1{
    margin-left: -50px;
  }
+    #knowledge{
+    height:810px;
+    }
 
 #about{
   display: flex;
