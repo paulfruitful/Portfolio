@@ -148,7 +148,7 @@ nav.sticky .menu-btn{
 .home .button{
   margin: 14px 0;
 }
-.home .button button{
+.home .button a{
   outline: none;
   padding: 8px 16px;
   border-radius: 6px;
