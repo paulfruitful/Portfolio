@@ -235,7 +235,7 @@ section  .topic{
 section .button{
   margin: 16px 0;
 }
-section .button button{
+section .button a{
   outline: none;
   padding: 8px 16px;
   border-radius: 4px;
@@ -247,7 +247,7 @@ section .button button{
   cursor: pointer;
   transition: all 0.4s ease;
 }
-section .button button:hover{
+section .button a:hover{
   border-color: #4070f4;
   background-color: #fff;
   color: #4070f4;
