@@ -154,13 +154,13 @@ nav.sticky .menu-btn{
   border-radius: 6px;
   font-size: 25px;
   font-weight: 400;
-  background: #4070f4;
+  background: #1a3685;
   color: #fff;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
 }
-.home .button button:hover{
+.home .button a:hover{
   border-color: #4070f4;
   background-color: #fff;
   color: #4070f4;
