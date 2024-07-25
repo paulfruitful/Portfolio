@@ -8,6 +8,18 @@
   scroll-behavior: smooth;
 }
 
+#btn-call{
+  padding: 20px 20px;
+  width: 120px;
+  height: 80px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 12px;
+
+
+
+}
+
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
     width: 10px;
@@ -16,13 +28,13 @@
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #6e93f7;
+    background:#f0e8ff;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #4070f4;
+    background: #000000;
 }
 /* navbar styling */
 nav{
@@ -47,7 +59,7 @@ nav .navbar{
 nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
-  color: #121314;
+  color:transparent;
 }
 nav.sticky .navbar .logo a{
   color: #fff;
@@ -63,12 +75,12 @@ nav .navbar .menu li{
 .navbar .menu a{
   font-size: 18px;
   font-weight: 500;
-  color: #0E2431;
+  color:transparent;
   padding: 6px 0;
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover{
-  color: #4070f4;
+  color: #ffffff;
 }
 nav.sticky .menu a{
   color: #FFF;
@@ -77,7 +89,7 @@ nav.sticky .menu a:hover{
   color: #0E2431;
 }
 .navbar .media-icons a{
-  color: #4070f4;
+  color: #ffffff;
   font-size: 18px;
   margin: 0 6px;
 }
@@ -108,38 +120,126 @@ nav.sticky .menu-btn{
 }
 
 /* home section styling */
-.home{
+@keyframes slideBackground {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@-moz-keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.home {
+  position: relative;
+}
+
+#overlay {
+  -moz-animation: overlay 1.5s 1.5s forwards;
+  -webkit-animation: overlay 1.5s 1.5s forwards;
+  -ms-animation: overlay 1.5s 1.5s forwards;
+  animation: overlay 1.5s 1.5s forwards;
+  background-attachment: fixed, fixed;
+  background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
+  background-position: top left, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.home {
+  display: flex;
   height: 100vh;
   width: 100%;
   background: url("images/bac.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  animation: slideBackground 10s linear infinite;
   font-family: 'Ubuntu', sans-serif;
 }
-.home .home-content{
-  width: 90%;
+
+.home .home-content {
+  width: 100%;
+  z-index: 2;
   height: 100%;
-  margin: auto;
+  background-color: rgba(0, 0, 0, 0.329);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.home .text-one{
-  font-size: 25px;
-  color: #0E2431;
+
+.home .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.home .text-two{
-  color: #0E2431;
-  font-size: 75px;
+
+.home .text-two {
+  color: white;
+  text-align: center;
+  font-size: 80px;
   font-weight: 600;
   margin-left: -3px;
 }
-.home .text-three{
-  font-size: 40px;
-  margin: 5px 0;
-  color: #073bcc;
+
+.home .text-tag {
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  
+  ;
+
+  text-align: center;
 }
+
 .home .text-four{
   font-size: 23px;
   margin: 5px 10px;
@@ -165,10 +265,58 @@ nav.sticky .menu-btn{
   background-color: #fff;
   color: #4070f4;
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
-/* About Section Styling */
-/* Those Elements Where We Have Apply Same CSS,
- I'm Selecting Directly 'Section Tag' and 'Class'  */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.home .text-two,
+
+
+.home .text-two {
+  animation-delay: 0.5s; /* Delay the start of the animation for .text-two */
+}
+
+.home .text-tag {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0; 
+  animation-delay: 1s; /* Delay the start of the animation for .text-tag */
+
+}
 section{
   padding-top: 40px;
 }
@@ -177,8 +325,13 @@ section .content{
   margin: 40px auto;
   font-family: 'Poppins', sans-serif;
 }
+.about{
+  z-index:2 ;
+}
 .about .about-details{
   display: flex;
+  
+  z-index:2 ;
   justify-content: space-between;
   align-items: center;
 }
