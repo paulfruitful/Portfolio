@@ -72,6 +72,7 @@ nav .navbar .menu li{
   list-style: none;
   margin: 0 8px;
 }
+
 .navbar .menu a{
   font-size: 18px;
   font-weight: 500;
@@ -92,6 +93,9 @@ nav.sticky .menu a:hover{
   color: #ffffff;
   font-size: 18px;
   margin: 0 6px;
+}
+.navbar .media-icons a:hover{
+  color: #464449;
 }
 nav.sticky .media-icons a{
   color: #FFF;
@@ -236,7 +240,11 @@ nav.sticky .menu-btn{
   flex-direction: column;
   align-items: center;
 }
-
+.size-6{
+ width:20px;
+ height:25px;
+ margin-right: 3px;
+}
 .home .text-two {
   color: white;
   text-align: center;
@@ -246,6 +254,8 @@ nav.sticky .menu-btn{
 }
 
 .home .text-tag {
+  display: flex;
+  flex-direction: row;
   color: white;
   font-weight: 300;
   font-size: 20px;
@@ -340,15 +350,67 @@ section .content{
   margin: 40px auto;
   font-family: 'Poppins', sans-serif;
 }
+
+.profile-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.profile-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #777;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.profile-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.profile-card button:hover {
+  background-color: #0056b3;
+}
+
 .about{
   z-index:2 ;
 }
-.about .about-details{
-  display: flex;
+.about .content{
   
-  z-index:2 ;
+}
+.about .about-details {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; /* Align items at the start */
+  z-index: 2;
+  gap: 20px; /* Add gap for additional spacing */
 }
 section .title{
   display: flex;
@@ -379,7 +441,9 @@ section .title span::after{
   transform: translateX(-50%);
 }
 .about .about-details .left{
+  position: relative;
   width: 45%;
+  justify-self: start;
 }
 .about .left img{
   height: 400px;
@@ -387,10 +451,17 @@ section .title span::after{
   object-fit: cover;
   border-radius: 12px;
 }
-.about-details .right{
-  width: 55%;
-  max-width: 1500px; margin: auto; padding: 20px; background: #f4f4f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+.about .about-details .right {
+  max-width: 50%;
+  margin-left: 20px; /* Add margin to the left */
+  padding: 20px;
+  background: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
+
 section  .topic{
   color: #ffffff;
   font-size: 25px;
@@ -575,26 +646,48 @@ footer .text span a:hover{
     width: 85%;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .about .about-details{
-    justify-content: center;
     flex-direction: column;
+    align-items:normal;
   }
   .about .about-details .left{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
   }
-  .about-details .right{
-    width: 90%;
-    margin: 40px 0;
+
+  .image-wrapper{
+    width:400px ;
+    align-items: center;
+  }
+  .about .about-details .right{
+    width:100%;
   }
   .services .boxes .box{
     margin: 20px 0;
     width: calc(100% / 2 - 20px);
   }
 }
+
+@media (min-width:800px){
+  .about .about-details .left{
+    flex-direction: column;
+
+  }
+  .about .about-details{
+    flex-direction: row;
+  }
+  .about .about-details .right {
+    width: 50%;
+    margin-left: 20px; /* Add margin to the left */
+    padding: 30px;
+  }  
+}
 @media (max-width: 900px) {
+  
   .about .left img{
     height: 350px;
     width: 350px;
@@ -665,7 +758,12 @@ footer .text span a:hover{
     width: 100%;
 }
 }
-
+#topiced{
+  font-size: 1.5em; 
+  font-weight: bold; 
+  color: #333; 
+  margin-bottom: 10px;
+}
 @media (max-width: 500px){
   
 .home .text-two {
@@ -680,6 +778,7 @@ footer .text span a:hover{
 
   text-align: center;
 }
+
   .image-wrapper {
     display: inline-block;
     width:90%;
@@ -688,8 +787,23 @@ footer .text span a:hover{
     border-radius: 50%;
     padding: 15px; 
     background: rgb(22, 17, 24);
+  }#topiced {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
   }
   
+  #txt {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
   #styled-image {
     border-radius: 50%;
     width:99%;
