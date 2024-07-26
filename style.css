@@ -408,11 +408,12 @@ section .content{
   border-radius: 4px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  transition: padding 0.1s ease,  color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 .btn:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px 40px;
+  padding:15px 20px;
+  margin-bottom:15px ;
   border:3px solid white;
  
 }
@@ -476,6 +477,7 @@ section .title span::after{
 }
 
 .about .about-details .right {
+  align-self: center;
   width: 50%;
   margin-left: 20px; /* Add margin to the left */
   padding: 20px;
