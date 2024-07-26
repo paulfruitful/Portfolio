@@ -369,7 +369,7 @@ section .content{
 .profile-card p {
   margin: 10px 0;
   font-size: 1rem;
-  color: #f8f7f7 ;
+  color: #e4e4e4 ;
 }
 
 .social-icons {
@@ -378,11 +378,17 @@ section .content{
 
 .social-icons a {
   margin: 0 10px;
+  display: inline;
 }
 
-.social-icons img {
-  width: 24px;
-  height: 24px;
+.social-icons svg{
+  width: 50px;
+  height: 50px;
+}
+.social-icons svg:hover{
+  width: 70px;
+  opacity:50% ;
+  height: 70px;
 }
 
 .profile-card button {
