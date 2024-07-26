@@ -110,7 +110,7 @@ nav .menu-btn,
   display: none;
 }
 nav .menu-btn{
-  color: #4070f4;
+  color: transparent;
 }
 nav.sticky .menu-btn{
   color: #FFF;
@@ -172,6 +172,21 @@ nav.sticky .menu-btn{
 }
 .home {
   position: relative;
+}
+.image-wrapper {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  padding: 20px; /* Adjust padding as needed */
+  background: rgb(22, 17, 24);
+}
+
+#styled-image {
+  border-radius: 50%;
+  
+  background-color: white; /* Ensures the white background */
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Ensures padding is included in the element's width and height */
 }
 
 #overlay {
@@ -341,7 +356,7 @@ section .title{
   margin-bottom: 40px;
 }
 section .title span{
-  color: #0E2431;
+  color: #ffffff;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -374,9 +389,10 @@ section .title span::after{
 }
 .about-details .right{
   width: 55%;
+  max-width: 1500px; margin: auto; padding: 20px; background: #f4f4f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 section  .topic{
-  color: #0E2431;
+  color: #ffffff;
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -408,7 +424,7 @@ section .button a:hover{
 
  /* My Skills CSS */
  .skills{
-   background: #F0F8FF;
+   background: #000000;
  }
  .skills .content{
    padding: 40px 0;
@@ -422,7 +438,7 @@ section .button a:hover{
    width: 50%;
  }
  .skills-details p{
-   color: #0E2431;
+   color: #ffffff;
    text-align: justify;
  }
 .skills .skills-details .experience{
@@ -431,11 +447,11 @@ section .button a:hover{
   margin: 0 10px;
 }
 .skills-details .experience .num{
-  color: #0E2431;
+  color: #ffffff;
   font-size: 80px;
 }
 .skills-details .experience .exp{
-  color: #0E2431;
+  color: #ffffff;
   margin-left: 20px;
   font-size: 18px;
   font-weight: 500;
@@ -453,11 +469,11 @@ section .button a:hover{
 }
 .skills-details .boxes .topic{
   font-size: 20px;
-  color: #4070f4;
+  color: #ffffff;
 }
 .skills-details .boxes .per{
   font-size: 60px;
-  color: #4070f4;
+  color: #ffffff;
 }
 
 /* My Services CSS */
@@ -540,6 +556,7 @@ footer .text span a:hover{
 }
 /* Scroll TO Top Button CSS */
 .scroll-button a{
+  z-index:10 ;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -592,7 +609,7 @@ footer .text span a:hover{
     position: fixed;
     left: -100%;
     top: 0;
-    background: #0E2431;
+    background: #000000;
     height: 100vh;
     max-width: 400px;
     width: 100%;
@@ -650,6 +667,41 @@ footer .text span a:hover{
 }
 
 @media (max-width: 500px){
+  
+.home .text-two {
+  font-size:40px;
+}
+
+.home .text-tag {
+ 
+  font-size: 19px;
+  
+  ;
+
+  text-align: center;
+}
+  .image-wrapper {
+    display: inline-block;
+    width:90%;
+    height: 30%;
+    position: relative;
+    border-radius: 50%;
+    padding: 15px; 
+    background: rgb(22, 17, 24);
+  }
+  
+  #styled-image {
+    border-radius: 50%;
+    width:99%;
+    height:30%;
+    background-color: white; /* Ensures the white background */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensures padding is included in the element's width and height */
+  }
+  .home{
+    
+  animation: slideBackground 35s linear infinite;
+  }
   .home .text-two{
     font-size: 55px;
   }
