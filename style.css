@@ -352,8 +352,9 @@ section .content{
 }
 
 .profile-card {
-  background-color: #fff;
+  background-color: #000000;
   padding: 20px;
+  margin-top: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -362,13 +363,13 @@ section .content{
 .profile-card h2 {
   margin: 0;
   font-size: 1.5rem;
-  color: #333;
+  color: #ffffff;
 }
 
 .profile-card p {
   margin: 10px 0;
   font-size: 1rem;
-  color: #777;
+  color: #f8f7f7 ;
 }
 
 .social-icons {
@@ -453,7 +454,7 @@ section .title span::after{
 }
 
 .about .about-details .right {
-  max-width: 50%;
+  width: 50%;
   margin-left: 20px; /* Add margin to the left */
   padding: 20px;
   background: #f4f4f9;
