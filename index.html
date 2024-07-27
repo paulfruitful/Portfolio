@@ -2,6 +2,9 @@
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title> Paul Fruitful | A Solution Dev </title>
     <link rel="stylesheet" href="style.css">
@@ -173,133 +176,6 @@
 </section>
 
 
-<section class="highlight">
-  <ul class="results">
-    <li class="result">
-      <a href="#"><img src="Images/DSC_2843.jpg" width="500" height="500" alt=""></a>
-    </li>
-    <li class="result">
-      <a href="#"><img src="Images/IMG_6193.jpg" width="500" height="500" alt=""></a>
-    </li>
-    <li class="result">
-      <a href="#"><img src="Images/IMG_6254.jpg" width="500" height="500" alt=""></a>
-    </li>
-    <li class="result">
-      <a href="#"><img src="Images/IMG_6655.jpg" width="500" height="500" alt=""></a>
-    </li>
-    <li class="result">
-      <a href="#"><img src="Images/Screenshot 2023-12-12 234716.jpg" width="500" height="500" alt=""></a>
-    </li>
-    <li class="result">
-      <a href="#"><img src="Images/r1.jpg" width="500" height="500" alt=""></a>
-    </li>
-    <li class="result">
-      <a href="#"><img src="Images/Screenshot 2023-12-12 235153.jpg" width="500" height="500" alt=""></a>
-    </li>
-    <li class="result">
-      <a href="#"><img src="Images/Screenshot 2023-12-27 000955.jpg" width="500" height="500" alt=""></a>
-    </li>
-
-    <li class="result">
-      <a href="#"><img src="Images/Screenshot 2023-12-27 001054.jpg" width="500" height="500" alt=""></a>
-    </li>
-    <li class="result">
-      <a href="#"><img src="Images/Screenshot 2024-05-06 142533.jpg" width="500" height="500" alt=""></a>
-    </li>
-  </ul>
-  <style>
-@media (max-width:900px){
-  .highlight{
-    display: hidden;
-  }
-}
-.highlight {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-}
-    
-.highlight ul {
-  display: flex;
-  width: calc(80% - 2rem);
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.highlight ul li {
-  padding: 0;
-}
-
-.highlight ul img {
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: all 0.2s ease;
-}
-
-.highlight  ul:is(:hover, :focus-within) img {
-  opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
-  filter: grayscale(calc(1 - var(--active-lerp, 0)));
-}
-
-:root {
-  --lerp-0: 1;
-  --lerp-1: 0.5787037;
-  --lerp-2: 0.2962963;
-  --lerp-3: 0.125;
-  --lerp-4: 0.037037;
-  --lerp-5: 0.0046296;
-  --lerp-6: 0;
-}
-
-.highlight ul a {
-  outline-offset: 4px;
-}
-
-.highlight ul li {
-  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
-  transition: flex 0.2s ease;
-}
-
-li:is(:hover, :focus-within) {
-  --active-lerp: var(--lerp-0);
-  z-index: 7;
-}
-li:has( + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li {
-  --active-lerp: var(--lerp-1);
-  z-index: 6;
-}
-li:has( + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li {
-  --active-lerp: var(--lerp-2);
-  z-index: 5;
-}
-li:has( + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li {
-  --active-lerp: var(--lerp-3);
-  z-index: 4;
-}
-li:has( + li + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li + li {
-  --active-lerp: var(--lerp-4);
-  z-index: 3;
-}
-li:has( + li + li + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li + li + li {
-  --active-lerp: var(--lerp-5);
-  z-index: 2;
-}
-li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li + li + li + li {
-  --active-lerp: var(--lerp-6);
-  z-index: 1;
-}
-
-  </style>
- </section>
-
 
 <!-- My Skill Section Start -->
 <!-- Section Tag and Other Div will same where we need to put same CSS -->
@@ -309,7 +185,7 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
    <div class="skills-details">
      <div class="text">
        <div class="topic">Skills Reflects Knowledge</div>
-       <p>This my skill rating based on experience, efficiency and versatility in using each of these languages to create full scale solutions to end complex problems.</p>
+       <p>My experience, efficiency and versatilit are based on using each of these languages to create full scale solutions to end complex problems.</p>
        <div class="experience">
          <div class="num">5+</div>
          <div class="exp">Years Of <br> Experience</div>
@@ -489,6 +365,72 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
   }
 
 </style>
+
+<section style="margin-bottom: 100px;">
+  <div class="container">
+    <h1>What I Offer</h1>
+    <div class="row">
+      <div class="service">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Frontend Development</h2>
+        <p>
+          I create visually appealing and interactive user interfaces using HTML, CSS, JavaScript, React.js, Next.Js and TypeScript, ensuring a responsive and dynamic web experience.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fas fa-chart-line"></i>
+        <h2>Backend Development</h2>
+        <p>
+          I offer robust server-side logic and API development using PHP, Laravel,Typescript and Python, with expertise in handling databases with SQL, PostgreSQL, MySQL and optimizing performance with technologies Redis.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fab fa-sketch"></i>
+        <h2>Cloud Development</h2>
+        <p>
+          I specialize in deploying and managing scalable applications on Google Cloud Platform (GCP), providing cloud infrastructure setup, serverless computing, and efficient cloud storage solutions.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fas fa-database"></i>
+        <h2>Technical Writing</h2>
+        <p>
+          I deliver clear and concise documentation for software, APIs, and user manuals, ensuring your technical content is accessible and understandable for all audiences.
+        </p>
+      </div>
+        
+      <div class="service">
+        <i class="fas fa-handshake"></i>
+        <h2>Version Control & Collaboration</h2>
+        <p>
+          I manage code versions and facilitate collaborative development using Git, ensuring efficient workflow and seamless integration of changes across the development team.      </div>
+
+      <div class="service">
+        <i class="fas fa-microchip"></i>
+        <h2>Machine Learning & Automation</h2>
+        <p>
+          I integrate advanced machine learning models using scikit-learn and provide automation solutions with Selenium, enhancing your applications with intelligent features and improved efficiency.        </p>
+      </div>
+
+      <div class="service">
+        <i class="fas fa-robot"></i>
+        <h2>Prompt Engineering</h2>
+        <p>
+          I design and refine effective prompts to enhance the performance of AI models, ensuring accurate and relevant outputs for various applications in natural language processing. 
+             </p>
+      </div>
+
+      <div class="service">
+        <i class="fa fa-book"></i>
+        <h2>Coding Instuctor</h2>
+        <p>
+          I provide personalized coding instruction and mentorship, leveraging my expertise in various programming languages and technologies to help students and professionals enhance their coding skills and achieve their learning goals.      </div>
+    </div>
+  </div>
+
+
+</section>
+
 
 <!-- Contact Me section Start -->
 <section class="contact" id="contact">

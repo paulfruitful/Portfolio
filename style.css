@@ -425,9 +425,19 @@ section .content{
 .about{
   z-index:2 ;
 }
-.about .content{
-  
+@media (max-width:400px){
+  .social-icons svg{
+    width: 30px;
+    height: 30px;
+  }
+  .profile-card p{
+    font-size: 0.78rem;
+  }
+  .profile-card{
+    width: 90%;
+  }
 }
+
 .about .about-details {
   display: flex;
   flex-direction: row;
@@ -619,7 +629,7 @@ section .button a:hover{
 }
 /* Contact Me CSS */
 .contact{
-  background: #F0F8FF;
+  background: #000000;
 }
 .contact .content{
   margin: 0 auto;
@@ -627,6 +637,7 @@ section .button a:hover{
 }
 .contact .text{
   width: 80%;
+  color: white;
   text-align: center;
   margin: auto;
 }
@@ -711,12 +722,10 @@ footer .text span a:hover{
     padding: 30px;
   }  
 }
+
+
 @media (max-width: 900px) {
-  
-  .about .left img{
-    height: 350px;
-    width: 350px;
-  }
+ 
 }
 
 @media (max-width: 750px) {
@@ -851,4 +860,85 @@ footer .text span a:hover{
     font-size: 50px;
     color: #4070f4;
   }
+}
+
+
+.container {
+  font-family: "Mulish", sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 10px 8%;
+
+
+}
+
+.container h1 {
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 60px;
+  font-weight: 600;
+  position: relative;
+}
+
+.container h1::after {
+  content: '';
+  background:#4070f4;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  
+  background: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+  text-align:center;
+  padding: 25px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.5s, background 0.5s;
+}
+
+.service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  
+  color: #333; ;
+}
+
+.service h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service:hover {
+  background: #272727;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.service:hover i {
+  color: #f7f7f7;
+}
+
+.service:hover p{
+  color: white;
+}
+.service p{
+  font-family: 'Ubuntu', sans-serif;
+  color: #555;
+ padding: 10px 10px; 
+  margin: 3px;
+  font-weight:100;
 }
