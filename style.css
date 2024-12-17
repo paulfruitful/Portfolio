@@ -199,7 +199,7 @@ nav.sticky .menu-btn{
   -ms-animation: overlay 1.5s 1.5s forwards;
   animation: overlay 1.5s 1.5s forwards;
   background-attachment: fixed, fixed;
-  background-image: url("https://paulfruitful.netlify.app/images/overlay-pattern.png"), url("https://paulfruitful.netlify.app/images/overlay.svg");
+  background-image: url("Images/overlay-pattern.png"), url("Images/overlay.svg");
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -215,7 +215,7 @@ nav.sticky .menu-btn{
   display: flex;
   height: 100vh;
   width: 100%;
-  background: url("https://paulfruitful.netlify.app/images/bac.jpg") no-repeat;
+  background: url("Images/bac.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
